@@ -1,18 +1,24 @@
 {
-  "name": "nrrapp",
+  "name": "Navy Record Review App",
   "version": "0.0.1",
   "description": "Electron App of navyrecordreview.com",
   "main": "index.js",
   "scripts": {
     "test": "test",
-    "start": "electron ."
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
   "author": "Tom Gardner, CWPDEV LLC",
   "license": "ISC",
   "dependencies": {
-    "electron": "^22.0.0"
+    "electron-squirrel-startup": "^1.0.0"
   },
   "devDependencies": {
-    "@electron-forge/cli": "^6.0.4"
+    "@electron-forge/cli": "^6.0.5",
+    "@electron-forge/maker-deb": "^6.0.5",
+    "@electron-forge/maker-dmg": "^6.0.5",
+    "@electron-forge/maker-squirrel": "^6.0.5",
+    "electron": "^22.3.2"
   }
 }
